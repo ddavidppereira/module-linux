@@ -1,0 +1,21 @@
+Python Wrapper for some Linux specific functionality
+
+* Scheduler interfaces
+* ptrace(2) -- could be used to control other tasks
+
+Build:
+
+./setup.py build
+
+Install:
+
+./setup.py install
+
+Test:
+
+test/test.py
+
+More information available from:
+
+http://code.google.com/p/module-linux/
+
