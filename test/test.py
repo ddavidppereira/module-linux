@@ -22,7 +22,7 @@ def hello():
 
 if __name__ == '__main__':
   run_on_cpu(1, hello)
-  p = subprocess.Popen(["/usr/bin/sleep", "10"])
+  p = subprocess.Popen(["/bin/sleep", "10"])
   ptrace(PTRACE_ATTACH, p.pid)
   print "Attached: ", p.pid
   print waitpid(p.pid, WUNTRACED);
